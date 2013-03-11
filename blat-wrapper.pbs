@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -N gridp
+#PBS -l nodes=uv:ppn=8,mem=60gb
+#PBS -q aangs
+#PBS -m a
+#PBS -M spettitt@icr.ac.uk
+#PBS -o /home/spettitt/data/grid_pilot/PB5blat.out
+#PBS -e /home/spettitt/data/grid_pilot/PB5blat.err
+#PBS -j oe
+/cmb/blat/bin/i686/blat /home/spettitt/genome/Mus_musculus.GRCm38.69.dna.toplevel.fa /home/spettitt/data/grid_pilot/PB3.fasta.clip /home/spettitt/data/grid_pilot/PB3.psl
+/cmb/blat/bin/i686/blat /home/spettitt/genome/Mus_musculus.GRCm38.69.dna.toplevel.fa /home/spettitt/data/grid_pilot/PB5.fasta.clip /home/spettitt/data/grid_pilot/PB5.psl
+
+wait
