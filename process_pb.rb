@@ -66,4 +66,3 @@ end # while l
 	end
 	out.puts ">"+id
 	out.puts seq
-# Record is a hash that stores the positions of the tag matches for each sequence, keyed by sequence id (not currently used).
