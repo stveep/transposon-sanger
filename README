@@ -4,3 +4,6 @@ Start with foo.fasta file. Order to run:
 2. qsub blat-wrapper.pbs [change as needed].  Outputs foo.psl
 3. blat_parse.rb foo.psl  Parses BLAT output and gives best mapping for each read: foo.psl.map
 4. qusb PBS_pullout.sh [change as needed]. Gets genes using ruby ensembl api. Outputs foo.psl.map.genes
+
+
+......
